@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "PYHybridKit"
   s.version      = "0.0.1"
-  s.summary      = "A short description of PYHybridKit."
+  s.summary      = "PYHybridKit help devlopers to work more effective"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                    PYHybridKit help devlopers
                    DESC
 
   s.homepage     = "https://github.com/puyangdev/PYHybridKit"
@@ -38,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -90,10 +91,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "PYHybridKit", "PYHybridKit/**/*.{h,m}"
+  s.exclude_files = "PYHybridKit/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  # s.public_header_files = "PYHybridKit/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

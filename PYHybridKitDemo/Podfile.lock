@@ -1,0 +1,16 @@
+PODS:
+  - PYHybridKit (0.0.1)
+
+DEPENDENCIES:
+  - PYHybridKit (from `../`)
+
+EXTERNAL SOURCES:
+  PYHybridKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PYHybridKit: 9468b8961a41886a20f64be754028158460cb2bc
+
+PODFILE CHECKSUM: b0a349554673a03ac525955fca434f9c75e9e056
+
+COCOAPODS: 1.3.1
