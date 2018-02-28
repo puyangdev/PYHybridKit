@@ -29,6 +29,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     PYHybirdViewController *hyBird = [[PYHybirdViewController alloc] init];
     hyBird.webSiteUrlStr = @"https://www.tmall.com/#/main";
+    hyBird.webSiteUrlStr = @"http://www.163.com";
     [self.navigationController pushViewController:hyBird animated:YES];
 }
 

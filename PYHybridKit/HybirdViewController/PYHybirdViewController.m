@@ -38,7 +38,7 @@
         
         WKPreferences *preferences = [WKPreferences new];
         preferences.javaScriptCanOpenWindowsAutomatically = YES;
-        preferences.minimumFontSize = 30.0;
+//        preferences.minimumFontSize = 30.0;
         configuration.preferences = preferences;
         
         _webView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:configuration];
@@ -51,9 +51,9 @@
         if ([_webView respondsToSelector:@selector(setDelegate:)]) {
             [_webView setUIDelegate:self];
         }
-        NSString *jsToScaleFit = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
-        WKUserScript *toFitScript = [[WKUserScript alloc] initWithSource:jsToScaleFit injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:true];
-        [configuration.userContentController addUserScript:toFitScript];
+//        NSString *jsToScaleFit = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
+//        WKUserScript *toFitScript = [[WKUserScript alloc] initWithSource:jsToScaleFit injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:true];
+//        [configuration.userContentController addUserScript:toFitScript];
     }
     return _webView;
 }
