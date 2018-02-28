@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <PYHybridKit/PYHybridKitHeader.h>
 
 @interface ViewController ()
 
@@ -18,15 +19,17 @@
     [super viewDidLoad];
    
 #ifdef INTERNAL_RELEASE
-    NSLog(@"ddddd");
      self.view.backgroundColor = [UIColor redColor];
 #else
-    NSLog(@"kkkkkk");
      self.view.backgroundColor = [UIColor blueColor];
 #endif
 
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    PYHybirdViewController *hyBird = [[PYHybirdViewController alloc] init];
+    [self.navigationController pushViewController:hyBird animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

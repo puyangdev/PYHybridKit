@@ -8,6 +8,9 @@
   "authors": {
     "puyangdev": "648135401@qq.com"
   },
+  "platforms": {
+    "ios": "8.0"
+  },
   "source": {
     "git": "https://github.com/puyangdev/PYHybridKit.git",
     "tag": "0.0.1"
@@ -16,11 +19,5 @@
     "PYHybridKit",
     "PYHybridKit/**/*.{h,m}"
   ],
-  "exclude_files": "PYHybridKit/Exclude",
-  "platforms": {
-    "osx": null,
-    "ios": null,
-    "tvos": null,
-    "watchos": null
-  }
+  "exclude_files": "PYHybridKit/Exclude"
 }

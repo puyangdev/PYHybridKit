@@ -24,6 +24,5 @@
                                                 HTTPVersion:@"HTTP/1.1"
                                                headerFields:customFields];
     return customResponse;
-    
 }
 @end
