@@ -15,4 +15,5 @@ static PYLocalImageManger *_instance;
     });
     return _instance;
 }
+
 @end

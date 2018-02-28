@@ -9,4 +9,5 @@
 
 @interface PYLocalImageManger : NSObject
 + (PYLocalImageManger*)sharedLocalImageMangerInstance;
+
 @end

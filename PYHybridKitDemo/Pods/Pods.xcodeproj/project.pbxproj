@@ -15,6 +15,8 @@
 		C353745F204658F2009895E1 /* PYLocalImageManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C353745D204658F2009895E1 /* PYLocalImageManger.m */; };
 		C353746220465939009895E1 /* PYLocalJavaScriptManger.h in Headers */ = {isa = PBXBuildFile; fileRef = C353746020465939009895E1 /* PYLocalJavaScriptManger.h */; };
 		C353746320465939009895E1 /* PYLocalJavaScriptManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C353746120465939009895E1 /* PYLocalJavaScriptManger.m */; };
+		C353746620465D03009895E1 /* PYLocalApiManger.h in Headers */ = {isa = PBXBuildFile; fileRef = C353746420465D03009895E1 /* PYLocalApiManger.h */; };
+		C353746720465D03009895E1 /* PYLocalApiManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C353746520465D03009895E1 /* PYLocalApiManger.m */; };
 		FC00CDCC905BCF943D1EBE15C5E825FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		C353745D204658F2009895E1 /* PYLocalImageManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYLocalImageManger.m; sourceTree = "<group>"; };
 		C353746020465939009895E1 /* PYLocalJavaScriptManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYLocalJavaScriptManger.h; sourceTree = "<group>"; };
 		C353746120465939009895E1 /* PYLocalJavaScriptManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYLocalJavaScriptManger.m; sourceTree = "<group>"; };
+		C353746420465D03009895E1 /* PYLocalApiManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYLocalApiManger.h; sourceTree = "<group>"; };
+		C353746520465D03009895E1 /* PYLocalApiManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYLocalApiManger.m; sourceTree = "<group>"; };
 		D06FC9AF7F63C96E4F48B7EA2A8936C3 /* PYHybridKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PYHybridKit-dummy.m"; sourceTree = "<group>"; };
 		D197BB6F2DABCDD6975FF227C473DBB1 /* PYHybridKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PYHybridKit.xcconfig; sourceTree = "<group>"; };
 		D4D0953B7665949982728F326074D420 /* libPods-PYHybridKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PYHybridKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +158,8 @@
 				C353745D204658F2009895E1 /* PYLocalImageManger.m */,
 				C353746020465939009895E1 /* PYLocalJavaScriptManger.h */,
 				C353746120465939009895E1 /* PYLocalJavaScriptManger.m */,
+				C353746420465D03009895E1 /* PYLocalApiManger.h */,
+				C353746520465D03009895E1 /* PYLocalApiManger.m */,
 			);
 			name = PYLocalResourceManger;
 			path = PYHybridKit/PYLocalResourceManger;
@@ -189,6 +195,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C353746620465D03009895E1 /* PYLocalApiManger.h in Headers */,
 				C353746220465939009895E1 /* PYLocalJavaScriptManger.h in Headers */,
 				C353745E204658F2009895E1 /* PYLocalImageManger.h in Headers */,
 			);
@@ -263,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C353746720465D03009895E1 /* PYLocalApiManger.m in Sources */,
 				C353745F204658F2009895E1 /* PYLocalImageManger.m in Sources */,
 				08DF5388AACE14BA53C42206D0D330FC /* PYHybridKit-dummy.m in Sources */,
 				C353746320465939009895E1 /* PYLocalJavaScriptManger.m in Sources */,
