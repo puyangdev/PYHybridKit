@@ -25,6 +25,10 @@
         [NSURLProtocol py_registerScheme:@"https"];
     });
     [self.view addSubview:self.webView];
+    if (self.webSiteUrlStr) {
+        NSURL *url = [NSURL URLWithString:self.webSiteUrlStr];
+        [_webView loadRequest:[NSURLRequest requestWithURL:url]];
+    }
 }
 
 - (WKWebView *)webView {
@@ -50,8 +54,6 @@
         NSString *jsToScaleFit = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
         WKUserScript *toFitScript = [[WKUserScript alloc] initWithSource:jsToScaleFit injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:true];
         [configuration.userContentController addUserScript:toFitScript];
-        NSURL *url = [NSURL URLWithString:@"http://www.163.com"];
-        [_webView loadRequest:[NSURLRequest requestWithURL:url]];
     }
     return _webView;
 }
