@@ -50,6 +50,7 @@ static PYLocalImageManger *_instance;
         _localArr = [[NSMutableArray alloc] init];
         [_localArr addObject:@"https://m.baidu.com/static/index/plus/homepage-newlogo.png"];
         [_localArr addObject:@"https://m.baidu.com/static/search/baiduapp_icon.png"];
+        [_localArr addObject:@"https://m.baidu.com/se/static/img/iphone/logo.png"];
     }
     return _localArr;
 }

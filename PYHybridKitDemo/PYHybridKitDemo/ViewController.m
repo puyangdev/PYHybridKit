@@ -8,9 +8,7 @@
 
 #import "ViewController.h"
 #import <PYHybridKit/PYHybridKitHeader.h>
-static NSString *baiduBig = @"https://m.baidu.com/static/index/plus/homepage-newlogo.png";
-//https://m.baidu.com/se/static/img/iphone/logo.png
-//https://m.baidu.com/static/search/baiduapp_icon.png
+
 @interface ViewController ()
 
 @end
