@@ -5,21 +5,19 @@
 //  Created by administrator on 2018/2/28.
 //
 
-#import "PYHybridNSURLProtocol.h"
+#import "PYHybridURLProtocol.h"
 #import "PYLocalApiManger.h"
 #import "PYLocalImageManger.h"
 #import "PYLocalJavaScriptManger.h"
 
 static NSString* const kPYHybridNSURLProtocolKey = @"kPYHybridNSURLProtocol";
 
-@interface PYHybridNSURLProtocol()<NSURLSessionDelegate>
+@interface PYHybridURLProtocol()<NSURLSessionDelegate>
 @property (nonnull,strong) NSURLSessionDataTask *task;
 @end
-@implementation PYHybridNSURLProtocol
+@implementation PYHybridURLProtocol
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request {
-    NSLog(@"%@",request.URL.absoluteString);
-    
     NSString *scheme = [[request URL] scheme];
     if ( ([scheme caseInsensitiveCompare:@"http"]  == NSOrderedSame ||
           [scheme caseInsensitiveCompare:@"https"] == NSOrderedSame ))
@@ -33,13 +31,16 @@ static NSString* const kPYHybridNSURLProtocolKey = @"kPYHybridNSURLProtocol";
 }
 
 + (NSURLRequest *)canonicalRequestForRequest:(NSURLRequest *)request {
-    NSMutableURLRequest *mutableReqeust = [request mutableCopy];
-    //替换本地图片
-//    if ([request.URL.absoluteString isEqualToString:sourUrl])
+    return request;
+//    NSMutableURLRequest *mutableReqeust = [request mutableCopy];
+//    //替换本地图片
+//    if ([[PYLocalImageManger sharedLocalImageMangerInstance] canReplaceWithLocalImage:request.URL])
 //    {
-//
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"testimage.png" ofType:nil];
+//        NSURL* url1 = [NSURL URLWithString:path];
+//        mutableReqeust = [NSMutableURLRequest requestWithURL:[url1 filePathURL]];
 //    }
-    return mutableReqeust;
+//    return mutableReqeust;
 }
 
 - (void)startLoading
@@ -47,24 +48,16 @@ static NSString* const kPYHybridNSURLProtocolKey = @"kPYHybridNSURLProtocol";
     NSMutableURLRequest *mutableReqeust = [[self request] mutableCopy];
     //给我们处理过的请求设置一个标识符, 防止无限循环,
     [NSURLProtocol setProperty:@YES forKey:kPYHybridNSURLProtocolKey inRequest:mutableReqeust];
-    
-    //这里最好加上缓存判断，加载本地离线文件， 这个直接简单的例子。
-//    if ([mutableReqeust.URL.absoluteString isEqualToString:sourUrl])
-//    {
-//        NSData* data = UIImagePNGRepresentation([UIImage imageNamed:@"medlinker"]);
-//        NSURLResponse* response = [[NSURLResponse alloc] initWithURL:self.request.URL MIMEType:@"image/png" expectedContentLength:data.length textEncodingName:nil];
-//        [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageAllowed];
-//        [self.client URLProtocol:self didLoadData:data];
-//        [self.client URLProtocolDidFinishLoading:self];
-//    }else
-//    {
-//        NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
-//        self.task = [session dataTaskWithRequest:self.request];
-//        [self.task resume];
-//    }
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
-    self.task = [session dataTaskWithRequest:self.request];
-    [self.task resume];
+    //缓存判断
+    if ([[PYLocalImageManger sharedLocalImageMangerInstance] canReplaceWithLocalImage:self.request.URL]) {
+        [PYLocalImageManger responseWithLocalImageData:nil urlProtocol:self];
+        return;
+    }else {
+        //网络发起请求
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
+        self.task = [session dataTaskWithRequest:self.request];
+        [self.task resume];
+    }
 }
 
 - (void)stopLoading

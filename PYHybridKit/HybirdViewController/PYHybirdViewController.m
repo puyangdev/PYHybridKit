@@ -7,7 +7,7 @@
 
 #import "PYHybirdViewController.h"
 #import <WebKit/WebKit.h>
-#import "PYHybridNSURLProtocol.h"
+#import "PYHybridURLProtocol.h"
 #import "NSURLProtocol+PY.h"
 
 @interface PYHybirdViewController ()<WKNavigationDelegate,WKUIDelegate>
@@ -20,7 +20,7 @@
     [super viewDidLoad];
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [NSURLProtocol registerClass:[PYHybridNSURLProtocol class]];
+        [NSURLProtocol registerClass:[PYHybridURLProtocol class]];
         [NSURLProtocol py_registerScheme:@"http"];
         [NSURLProtocol py_registerScheme:@"https"];
     });

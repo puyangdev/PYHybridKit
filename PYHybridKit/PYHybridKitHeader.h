@@ -9,7 +9,7 @@
 #define PYHybridKitHeader_h
 
 #import "NSURLProtocol+PY.h"
-#import "PYHybridNSURLProtocol.h"
+#import "PYHybridURLProtocol.h"
 #import "PYHybirdViewController.h"
 #import "PYLocalApiManger.h"
 #import "PYLocalImageManger.h"
