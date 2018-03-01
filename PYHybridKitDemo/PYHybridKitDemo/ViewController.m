@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import <PYHybridKit/PYHybridKitHeader.h>
-
+static NSString *baiduBig = @"https://m.baidu.com/static/index/plus/homepage-newlogo.png";
+//https://m.baidu.com/se/static/img/iphone/logo.png
+//https://m.baidu.com/static/search/baiduapp_icon.png
 @interface ViewController ()
 
 @end
@@ -29,7 +31,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     PYHybirdViewController *hyBird = [[PYHybirdViewController alloc] init];
     hyBird.webSiteUrlStr = @"https://www.tmall.com/#/main";
-    hyBird.webSiteUrlStr = @"http://www.163.com";
+    hyBird.webSiteUrlStr = @"https://www.baidu.com";
     [self.navigationController pushViewController:hyBird animated:YES];
 }
 

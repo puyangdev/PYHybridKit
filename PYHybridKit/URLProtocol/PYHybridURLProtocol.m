@@ -6,6 +6,10 @@
 //
 
 #import "PYHybridNSURLProtocol.h"
+#import "PYLocalApiManger.h"
+#import "PYLocalImageManger.h"
+#import "PYLocalJavaScriptManger.h"
+
 static NSString* const kPYHybridNSURLProtocolKey = @"kPYHybridNSURLProtocol";
 
 @interface PYHybridNSURLProtocol()<NSURLSessionDelegate>
@@ -14,6 +18,8 @@ static NSString* const kPYHybridNSURLProtocolKey = @"kPYHybridNSURLProtocol";
 @implementation PYHybridNSURLProtocol
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request {
+    NSLog(@"%@",request.URL.absoluteString);
+    
     NSString *scheme = [[request URL] scheme];
     if ( ([scheme caseInsensitiveCompare:@"http"]  == NSOrderedSame ||
           [scheme caseInsensitiveCompare:@"https"] == NSOrderedSame ))
@@ -28,6 +34,7 @@ static NSString* const kPYHybridNSURLProtocolKey = @"kPYHybridNSURLProtocol";
 
 + (NSURLRequest *)canonicalRequestForRequest:(NSURLRequest *)request {
     NSMutableURLRequest *mutableReqeust = [request mutableCopy];
+    //替换本地图片
 //    if ([request.URL.absoluteString isEqualToString:sourUrl])
 //    {
 //

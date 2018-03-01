@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21371E3E60AF3AF9EADFEEAA170256B7 /* PYLocalApiManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA49BC9D5522D8F7E71CBC2231B246 /* PYLocalApiManger.m */; };
-		59CDE88A395B40A3AC2F92BC494BE45B /* NSURLProtocol+PY.m in Sources */ = {isa = PBXBuildFile; fileRef = B8984C936A3BB0439B30BD823D33E028 /* NSURLProtocol+PY.m */; };
-		5E00F0360C61EF42A7DACDA47C0C6F3A /* PYLocalJavaScriptManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CA2E3476283A404F94757A648F97E4 /* PYLocalJavaScriptManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		747484F3E6AA15C9063A13EBAC438A09 /* NSURLProtocol+PY.h in Headers */ = {isa = PBXBuildFile; fileRef = 8504A3946E104BE537DFDE74098555CE /* NSURLProtocol+PY.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79AC78A4E9B56A541647CFD008F556D2 /* PYHybirdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D93CBB2FC764BD65DCBAAF0634E4817 /* PYHybirdViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B4A4FDB62D66F0B2873BF519A59C818 /* PYLocalImageManger.m in Sources */ = {isa = PBXBuildFile; fileRef = DC54DCED5574EE83F7F15B5629312486 /* PYLocalImageManger.m */; };
-		831C397FFEBA053219B3FA81334BFDF2 /* PYLocalImageManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 038F8050250D8932ADD2B6DEB6DFFEB6 /* PYLocalImageManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		022C82FF6E8BFCBECFBEA97E13ABD872 /* PYLocalApiManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 73FFFC56FF18645CC7A41E8AEEABFE19 /* PYLocalApiManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E949C301836C6110E7F7F11C25F50C9 /* PYLocalImageManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 038F8050250D8932ADD2B6DEB6DFFEB6 /* PYLocalImageManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		192C88EE8BBDAC3635ACC716EB2B7C7D /* PYHybridKitHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C36B350B335DE825535DCF2E15BFF6 /* PYHybridKitHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DA09EB956BE07DF1A7A6BEF0068494 /* PYHybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE753C555BAE5BB4B7B93A9B6CD8E97 /* PYHybirdViewController.m */; };
+		3E75E733898A0F2F839FBE8FE25E020D /* NSURLProtocol+PY.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEAE963645101C383339EF6112CE0AC /* NSURLProtocol+PY.m */; };
+		5DE41ACA952F1721C1333D8A3972476C /* PYLocalJavaScriptManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8186D7F33F86899532BC93A39AB53F /* PYLocalJavaScriptManger.m */; };
+		6F25BCEBE550B8BF3E2F7C05DE948A68 /* PYLocalImageManger.m in Sources */ = {isa = PBXBuildFile; fileRef = DC54DCED5574EE83F7F15B5629312486 /* PYLocalImageManger.m */; };
+		75FB42B3E8328716A04A1C49220B2881 /* PYHybridKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9837D02568DC7F1664994897BBF5FFD8 /* PYHybridKit-dummy.m */; };
+		7D98E52124D209CA59BFE7C699847FF3 /* PYHybridURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B0741ED69CB65E2BFA3BD0F7F9425FB7 /* PYHybridURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83F03C2A3F1BE3C9F8DC202A0F70488A /* Pods-PYHybridKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B01C0AE7CB5E59BDBF2CC511E1ADDE /* Pods-PYHybridKitDemo-dummy.m */; };
-		A922A3AADC18B59FEC2B29231B814A46 /* PYLocalJavaScriptManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8186D7F33F86899532BC93A39AB53F /* PYLocalJavaScriptManger.m */; };
-		B01188BB96793DDD6CD2D5BC680CADB2 /* PYHybridNSURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BC1C12B429D0CC49ED878A1730D75A /* PYHybridNSURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6AA477D48FC98C222818F3BF4FC589B /* PYHybirdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D93CBB2FC764BD65DCBAAF0634E4817 /* PYHybirdViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0EED1CE3C97975C2FF88DB2EC6022C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C249CE5DC01C292C538D8BE31FAB70F4 /* PYHybridNSURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B0257830733836A0B0567E08D2C9CC /* PYHybridNSURLProtocol.m */; };
-		C2D7A51F18C58ABF08F9C6767B56CB78 /* PYHybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE753C555BAE5BB4B7B93A9B6CD8E97 /* PYHybirdViewController.m */; };
-		D6A5A23908EC7501FDB13C840997FC9F /* PYHybridKitHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C36B350B335DE825535DCF2E15BFF6 /* PYHybridKitHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4EA349A27FE1695CB33E72A02C3F296 /* PYHybridKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9837D02568DC7F1664994897BBF5FFD8 /* PYHybridKit-dummy.m */; };
-		EE81DA8AEC8CEBE081EE6DDD8B22089A /* PYLocalApiManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 73FFFC56FF18645CC7A41E8AEEABFE19 /* PYLocalApiManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA18FCBCA4771977B5D14FCEAA564F0A /* PYLocalApiManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA49BC9D5522D8F7E71CBC2231B246 /* PYLocalApiManger.m */; };
+		D13C93103D587B4EDD4A7DF6D1520182 /* NSURLProtocol+PY.h in Headers */ = {isa = PBXBuildFile; fileRef = A4179A547AB8CE82FE1C17F7ABFEC809 /* NSURLProtocol+PY.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6188BFC5207C3A14186B1BD8E0C097D /* PYHybridURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0EDABAB090D32B47FC8C5ED13EF4FE /* PYHybridURLProtocol.m */; };
+		EF9572D630482FC35858D574696BC470 /* PYLocalJavaScriptManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CA2E3476283A404F94757A648F97E4 /* PYLocalJavaScriptManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC00CDCC905BCF943D1EBE15C5E825FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,24 +45,24 @@
 		73FFFC56FF18645CC7A41E8AEEABFE19 /* PYLocalApiManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PYLocalApiManger.h; sourceTree = "<group>"; };
 		74C93D3812A51E65FCFB2D56434E8B43 /* PYHybridKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PYHybridKit.xcconfig; sourceTree = "<group>"; };
 		75AA49BC9D5522D8F7E71CBC2231B246 /* PYLocalApiManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PYLocalApiManger.m; sourceTree = "<group>"; };
+		7BEAE963645101C383339EF6112CE0AC /* NSURLProtocol+PY.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+PY.m"; sourceTree = "<group>"; };
 		8066440C317E414A93B74563D0DA55F1 /* Pods-PYHybridKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PYHybridKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		84B01C0AE7CB5E59BDBF2CC511E1ADDE /* Pods-PYHybridKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PYHybridKitDemo-dummy.m"; sourceTree = "<group>"; };
-		8504A3946E104BE537DFDE74098555CE /* NSURLProtocol+PY.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+PY.h"; sourceTree = "<group>"; };
 		91010FF3E6472D2753F815288242835C /* Pods-PYHybridKitDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PYHybridKitDemo-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95B0257830733836A0B0567E08D2C9CC /* PYHybridNSURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PYHybridNSURLProtocol.m; sourceTree = "<group>"; };
 		9837D02568DC7F1664994897BBF5FFD8 /* PYHybridKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PYHybridKit-dummy.m"; sourceTree = "<group>"; };
 		9927D44EF9E4D779E3A2E11BBC626D63 /* libPYHybridKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPYHybridKit.a; path = libPYHybridKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CA2E3476283A404F94757A648F97E4 /* PYLocalJavaScriptManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PYLocalJavaScriptManger.h; sourceTree = "<group>"; };
 		9EA6C41E78037EA169B9785DAAD1781A /* Pods-PYHybridKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PYHybridKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A1C36B350B335DE825535DCF2E15BFF6 /* PYHybridKitHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PYHybridKitHeader.h; path = PYHybridKit/PYHybridKitHeader.h; sourceTree = "<group>"; };
+		A4179A547AB8CE82FE1C17F7ABFEC809 /* NSURLProtocol+PY.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+PY.h"; sourceTree = "<group>"; };
+		B0741ED69CB65E2BFA3BD0F7F9425FB7 /* PYHybridURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PYHybridURLProtocol.h; sourceTree = "<group>"; };
 		B81BC389C0AF6E3886079B4EE1D87F87 /* Pods-PYHybridKitDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PYHybridKitDemo-resources.sh"; sourceTree = "<group>"; };
-		B8984C936A3BB0439B30BD823D33E028 /* NSURLProtocol+PY.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+PY.m"; sourceTree = "<group>"; };
-		C3BC1C12B429D0CC49ED878A1730D75A /* PYHybridNSURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PYHybridNSURLProtocol.h; sourceTree = "<group>"; };
 		D4D0953B7665949982728F326074D420 /* libPods-PYHybridKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PYHybridKitDemo.a"; path = "libPods-PYHybridKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B53548C646351B659D303B202351D3 /* PYHybridKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PYHybridKit-prefix.pch"; sourceTree = "<group>"; };
 		DC54DCED5574EE83F7F15B5629312486 /* PYLocalImageManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PYLocalImageManger.m; sourceTree = "<group>"; };
 		EDEE95848740BF4F30DEBF49FFB5FD2E /* Pods-PYHybridKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PYHybridKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FE0EDABAB090D32B47FC8C5ED13EF4FE /* PYHybridURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PYHybridURLProtocol.m; sourceTree = "<group>"; };
 		FEE753C555BAE5BB4B7B93A9B6CD8E97 /* PYHybirdViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PYHybirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,18 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		199B4B08624016EE53E64E688E5AD87E /* URLProtocol */ = {
-			isa = PBXGroup;
-			children = (
-				8504A3946E104BE537DFDE74098555CE /* NSURLProtocol+PY.h */,
-				B8984C936A3BB0439B30BD823D33E028 /* NSURLProtocol+PY.m */,
-				C3BC1C12B429D0CC49ED878A1730D75A /* PYHybridNSURLProtocol.h */,
-				95B0257830733836A0B0567E08D2C9CC /* PYHybridNSURLProtocol.m */,
-			);
-			name = URLProtocol;
-			path = PYHybridKit/URLProtocol;
-			sourceTree = "<group>";
-		};
 		2147EFB446F1D113357694CF310CB336 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +132,7 @@
 				AFE552CD5059088DFAB71FB21F41E548 /* HybirdViewController */,
 				26FE82D726F0041700F7811F7F3A1E78 /* LocalResourceManger */,
 				5C32A25800365C698B28D4910ADB38A4 /* Support Files */,
-				199B4B08624016EE53E64E688E5AD87E /* URLProtocol */,
+				AE16E831C512D92CBBB2FDB55F49598A /* URLProtocol */,
 			);
 			name = PYHybridKit;
 			path = ../..;
@@ -170,6 +158,18 @@
 				30A80FD2E5CA8B168F47E4B8C9ED2F90 /* Products */,
 				36489E97C428539700B4944CCE28F743 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		AE16E831C512D92CBBB2FDB55F49598A /* URLProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				A4179A547AB8CE82FE1C17F7ABFEC809 /* NSURLProtocol+PY.h */,
+				7BEAE963645101C383339EF6112CE0AC /* NSURLProtocol+PY.m */,
+				B0741ED69CB65E2BFA3BD0F7F9425FB7 /* PYHybridURLProtocol.h */,
+				FE0EDABAB090D32B47FC8C5ED13EF4FE /* PYHybridURLProtocol.m */,
+			);
+			name = URLProtocol;
+			path = PYHybridKit/URLProtocol;
 			sourceTree = "<group>";
 		};
 		AFE552CD5059088DFAB71FB21F41E548 /* HybirdViewController */ = {
@@ -216,17 +216,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		64EB81833405F34C8AEF0841F0FFEFB5 /* Headers */ = {
+		47C37646A22C62B4B2D06ECF3581E10A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				747484F3E6AA15C9063A13EBAC438A09 /* NSURLProtocol+PY.h in Headers */,
-				79AC78A4E9B56A541647CFD008F556D2 /* PYHybirdViewController.h in Headers */,
-				D6A5A23908EC7501FDB13C840997FC9F /* PYHybridKitHeader.h in Headers */,
-				B01188BB96793DDD6CD2D5BC680CADB2 /* PYHybridNSURLProtocol.h in Headers */,
-				EE81DA8AEC8CEBE081EE6DDD8B22089A /* PYLocalApiManger.h in Headers */,
-				831C397FFEBA053219B3FA81334BFDF2 /* PYLocalImageManger.h in Headers */,
-				5E00F0360C61EF42A7DACDA47C0C6F3A /* PYLocalJavaScriptManger.h in Headers */,
+				D13C93103D587B4EDD4A7DF6D1520182 /* NSURLProtocol+PY.h in Headers */,
+				A6AA477D48FC98C222818F3BF4FC589B /* PYHybirdViewController.h in Headers */,
+				192C88EE8BBDAC3635ACC716EB2B7C7D /* PYHybridKitHeader.h in Headers */,
+				7D98E52124D209CA59BFE7C699847FF3 /* PYHybridURLProtocol.h in Headers */,
+				022C82FF6E8BFCBECFBEA97E13ABD872 /* PYLocalApiManger.h in Headers */,
+				0E949C301836C6110E7F7F11C25F50C9 /* PYLocalImageManger.h in Headers */,
+				EF9572D630482FC35858D574696BC470 /* PYLocalJavaScriptManger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,9 +254,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 984CE355DBB2FF46C1258EC86188EAFA /* Build configuration list for PBXNativeTarget "PYHybridKit" */;
 			buildPhases = (
-				C2056C6DB47DD108785496BB4EF3FF40 /* Sources */,
+				E4126BAC77CA08205A966292C9F4513E /* Sources */,
 				A66F116D5FE26E685080637A5636F8AC /* Frameworks */,
-				64EB81833405F34C8AEF0841F0FFEFB5 /* Headers */,
+				47C37646A22C62B4B2D06ECF3581E10A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -303,17 +303,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2056C6DB47DD108785496BB4EF3FF40 /* Sources */ = {
+		E4126BAC77CA08205A966292C9F4513E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59CDE88A395B40A3AC2F92BC494BE45B /* NSURLProtocol+PY.m in Sources */,
-				C2D7A51F18C58ABF08F9C6767B56CB78 /* PYHybirdViewController.m in Sources */,
-				E4EA349A27FE1695CB33E72A02C3F296 /* PYHybridKit-dummy.m in Sources */,
-				C249CE5DC01C292C538D8BE31FAB70F4 /* PYHybridNSURLProtocol.m in Sources */,
-				21371E3E60AF3AF9EADFEEAA170256B7 /* PYLocalApiManger.m in Sources */,
-				7B4A4FDB62D66F0B2873BF519A59C818 /* PYLocalImageManger.m in Sources */,
-				A922A3AADC18B59FEC2B29231B814A46 /* PYLocalJavaScriptManger.m in Sources */,
+				3E75E733898A0F2F839FBE8FE25E020D /* NSURLProtocol+PY.m in Sources */,
+				20DA09EB956BE07DF1A7A6BEF0068494 /* PYHybirdViewController.m in Sources */,
+				75FB42B3E8328716A04A1C49220B2881 /* PYHybridKit-dummy.m in Sources */,
+				E6188BFC5207C3A14186B1BD8E0C097D /* PYHybridURLProtocol.m in Sources */,
+				CA18FCBCA4771977B5D14FCEAA564F0A /* PYLocalApiManger.m in Sources */,
+				6F25BCEBE550B8BF3E2F7C05DE948A68 /* PYLocalImageManger.m in Sources */,
+				5DE41ACA952F1721C1333D8A3972476C /* PYLocalJavaScriptManger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
